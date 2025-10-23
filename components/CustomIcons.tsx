@@ -1,0 +1,75 @@
+import type { HTMLAttributes } from 'react';
+
+export const PulseLogoWhite = ({ className, ...props }: HTMLAttributes<SVGElement>) => (
+    <svg 
+        id="Layer_2" 
+        data-name="Layer 2" 
+        xmlns="http://www.w3.org/2000/svg" 
+        xmlnsXlink="http://www.w3.org/1999/xlink" 
+        viewBox="0 0 499.09 200.45"
+        {...props}
+    >
+        <defs>
+            <style>
+                {`.cls-1 {
+                    letter-spacing: 0em;
+                }
+
+                .cls-2 {
+                    letter-spacing: -.01em;
+                }
+
+                .cls-3 {
+                    font-family: Satoshi-Medium, Satoshi;
+                    font-size: 21.84px;
+                    font-weight: 500;
+                }
+
+                .cls-3, .cls-4 {
+                    fill: #f9fafb;
+                }
+
+                .cls-5 {
+                    letter-spacing: -.02em;
+                }
+
+                .cls-6 {
+                    letter-spacing: 0em;
+                }
+
+                .cls-7 {
+                    letter-spacing: 0em;
+                }
+
+                .cls-8 {
+                    letter-spacing: -.02em;
+                }
+
+                .cls-9 {
+                    fill: url(#linear-gradient);
+                }
+
+                .cls-10 {
+                    letter-spacing: 0em;
+                }
+
+                .cls-4 {
+                    font-family: Satoshi-Bold, Satoshi;
+                    font-size: 132.7px;
+                    font-weight: 700;
+                }`}
+            </style>
+            <linearGradient id="linear-gradient" x1="0" y1="108.94" x2="158.44" y2="108.94" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stopColor="#0357ee" />
+                <stop offset="1" stopColor="#22d3ee" />
+            </linearGradient>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer 1">
+            <g>
+                <path className="cls-9" d="m29.83,17.43c-.02,32.15-.04,64.29-.05,96.44-9.93,10.02-19.85,20.03-29.78,30.05,21.74-16.65,43.48-33.3,65.22-49.94-.1,8.68-.21,17.35-.31,26.03,22.69-21.72,45.37-43.45,68.06-65.17-17.07,11.33-34.15,22.67-51.22,34,.07-9.04.14-18.08.21-27.12-12.43,12.42-24.86,24.85-37.29,37.27-.1-22.34-.2-44.68-.3-67.01h99.54v74.16l-25.38,25.38h-34.53c-13.21,12.03-26.42,24.06-39.63,36.1.16-15.81.33-31.63.49-47.44-4.94,3.43-9.89,6.86-14.83,10.29-.22,10.47-.36,21.08-.41,31.85-.06,12.93.01,25.65.21,38.15,19.93-18.14,39.87-36.27,59.8-54.41h34.92l33.89-33.89V17.43H29.83Z" />
+                <text className="cls-4" transform="translate(168.27 114.85)"><tspan x="0" y="0">Pulse</tspan></text>
+                <text className="cls-3" transform="translate(176.35 143.37)"><tspan x="0" y="0">Bankles</tspan><tspan className="cls-1" x="76.02" y="0">s</tspan><tspan x="85.67" y="0">. Bo</tspan><tspan className="cls-8" x="124.32" y="0">r</tspan><tspan x="131.96" y="0">derles</tspan><tspan className="cls-1" x="191.69" y="0">s</tspan><tspan className="cls-10" x="201.34" y="0">. Al</tspan><tspan className="cls-5" x="232.91" y="0">w</tspan><tspan className="cls-2" x="249.2" y="0">a</tspan><tspan className="cls-7" x="260.6" y="0">y</tspan><tspan className="cls-6" x="271.33" y="0">s on.</tspan></text>
+            </g>
+        </g>
+    </svg>
+);
