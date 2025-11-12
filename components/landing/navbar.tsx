@@ -5,6 +5,7 @@ import { PulseButton } from "../PulseButton"
 import { ArrowUpRight, Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
+import { ThemeToggleButton } from "../ui/theme-toggle-button"
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -31,25 +32,29 @@ export const Navbar = () => {
                 />
             </Link>
 
-            {/* Desktop CTA Button */}
-            <div className="hidden sm:block">
+            {/* Desktop CTA Button and Theme Toggle */}
+            <div className="hidden sm:flex items-center gap-3">
+                <ThemeToggleButton variant="circle" start="center" />
                 <PulseButton size="sm" className="!px-5 !py-7 rounded-full !font-black text-base">
                     Try it now <ArrowUpRight className="size-6" />
                 </PulseButton>
             </div>
 
-            {/* Mobile Menu Button */}
-            <button
-                onClick={toggleMenu}
-                className="sm:hidden p-2 rounded-full hover:bg-white/10 transition-colors"
-                aria-label="Toggle menu"
-            >
-                {isMenuOpen ? (
-                    <X className="size-6" />
-                ) : (
-                    <Menu className="size-6" />
-                )}
-            </button>
+            {/* Mobile Menu Button and Theme Toggle */}
+            <div className="sm:hidden flex items-center gap-2">
+                <ThemeToggleButton variant="circle" start="center" />
+                <button
+                    onClick={toggleMenu}
+                    className="p-2 rounded-full hover:bg-white/10 transition-colors"
+                    aria-label="Toggle menu"
+                >
+                    {isMenuOpen ? (
+                        <X className="size-6" />
+                    ) : (
+                        <Menu className="size-6" />
+                    )}
+                </button>
+            </div>
 
             {/* Mobile Menu */}
             <AnimatePresence>

@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { ArrowUpRight, Shield, Zap, Globe, Lock } from "lucide-react"
+import {  Shield, Zap, Globe, Lock } from "lucide-react"
 
 export function Features() {
     const containerVariants = {
@@ -29,7 +29,7 @@ export function Features() {
             color: "from-blue-500 to-cyan-400",
             bgColor: "bg-blue-50",
             textColor: "text-white",
-            image: "/globe.svg",
+            image: "/security.png",
             span: "row-span-2"
         },
         {
@@ -40,7 +40,7 @@ export function Features() {
             color: "from-yellow-400 to-orange-500",
             bgColor: "bg-white",
             textColor: "text-gray-900",
-            image: "/security.png",
+            image: "/instant.png",
             span: "row-span-1"
         },
         {
@@ -51,7 +51,7 @@ export function Features() {
             color: "from-green-500 to-emerald-400",
             bgColor: "bg-white",
             textColor: "text-gray-900",
-            image: "/globe.svg",
+            image: "/card.png",
             span: "row-span-1"
         },
         {
@@ -62,7 +62,7 @@ export function Features() {
             color: "from-purple-500 to-pink-400",
             bgColor: "bg-white",
             textColor: "text-gray-900",
-            image: "/globe.svg",
+            image: "/savings.png",
             span: "row-span-1"
         },
         {
@@ -73,7 +73,7 @@ export function Features() {
             color: "from-red-500 to-rose-400",
             bgColor: "bg-white",
             textColor: "text-gray-900",
-            image: "/globe.svg",
+            image: "/world.png",
             span: "row-span-1"
         },
     ]
@@ -103,7 +103,6 @@ export function Features() {
                 className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4"
             >
                 {features.map((feature) => {
-                    const IconComponent = feature.icon
                     return (
                         <motion.div
                             key={feature.id}

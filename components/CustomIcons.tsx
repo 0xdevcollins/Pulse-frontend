@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from 'react';
 
-export const PulseLogoWhite = ({ className, ...props }: HTMLAttributes<SVGElement>) => (
+export const PulseLogoWhite = ({ ...props }: HTMLAttributes<SVGElement>) => (
     <svg 
         id="Layer_2" 
         data-name="Layer 2" 

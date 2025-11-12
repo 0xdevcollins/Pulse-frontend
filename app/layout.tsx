@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/providers";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -21,13 +22,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${bricolageGrotesque.variable} antialiased  bg-[#f2f0f0]`}
+        className={`${bricolageGrotesque.variable} antialiased bg-[#f2f0f0] dark:bg-background`}
       >
-        <main className="max-w-7xl mx-auto">  
-          {children}
-        </main>
+        <ThemeProvider>
+          <main className="max-w-7xl mx-auto">  
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

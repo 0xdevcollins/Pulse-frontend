@@ -1,7 +1,6 @@
 "use client"
 import { PulseButton } from "@/components/PulseButton";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
@@ -15,11 +14,6 @@ export function Hero() {
                 delayChildren: 0.3
             }
         }
-    };
-
-    const itemVariants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0 }
     };
 
     return (
